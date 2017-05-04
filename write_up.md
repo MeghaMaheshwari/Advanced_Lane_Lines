@@ -32,10 +32,40 @@ Examples of output of the camera calibration image is as follows:
 
 #### <b>Overall Algorithm</b>
 
-The overall steps can be seen from the flowchart below : </br>
+The overall steps can be seen from the table below : </br>
 
-    ![Output Image](output_images/Fig.png)
-    <img src="output_images/Fig.png" style="margin-right: 200px;"> 
+ <table style="width:100%; align:center;">
+  <tr>
+    <th>Step</th>
+    <th>Input</th>
+    <th>Outout</th>	
+  </tr>
+  <tr>
+    <td>Camera Calibration</td>
+    <td>Calibration Image</td>    
+	<td>Calibration Matrix</td>
+  </tr>
+  <tr>
+    <td>Undistortion</td>
+    <td>Original Image</td>
+    <td>Undistorted Image</td>	
+  </tr>
+  <tr>
+    <td>Sobel and Color Thresholding</td>
+    <td>Undistorted Image</td>
+    <td>Binary Thresholded Image</td>	
+  </tr>
+  <tr>
+    <td>Warping</td>
+    <td>Binary Thresholded Image</td>
+    <td>Birds eye view</td>	
+  </tr>
+  <tr>
+    <td>Lane-finding and inverse transform</td>
+    <td>Birds eye view</td>
+    <td>Final Image</td> 	
+  </tr>
+ </table> 
 
  
 #### <b> Undistortion </b>
