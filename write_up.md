@@ -7,7 +7,7 @@
 
 ### Detect Lane Lines on test images and project video
 
-All output image files are available in the location output_images and the final project video is project_video_out
+All output image files are available in the location output_images and the final project video is project_video_out.mp4
 
 > **The Steps in the Project are as following :**
 
@@ -34,7 +34,7 @@ Examples of output of the camera calibration image is as follows:
 
 The overall steps can be seen from the flowchart below : </br>
 
-    <img src="output_images/Fig.png" width="800" style="margin-right: 200px;"> 
+    <img src="output_images/Fig.png" style="margin-right: 200px;"> 
 
  
 #### <b> Undistortion </b>
