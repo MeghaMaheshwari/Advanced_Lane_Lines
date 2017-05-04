@@ -55,7 +55,7 @@ Sample mages can be seen below:
 * We also do a color thresholding on the HLS image.
   Sample :
   
-   <img src="output_images/color_threshold.png" width="600" style="margin-right: 100px;">
+   <img src="output_images/color_threshold.png" width="800" style="margin-right: 100px;">
     
 * Finally we merge the results of Sobel thresholding and color thresolding to get the binary thresholded image.
   Sample:
@@ -79,7 +79,9 @@ Once this entire process completes, the algorithm figures out the major chunk of
 
 After computing the lanes, we draw them back on the original undistorted image.
 
-<a href=""><img src="output_images/Lane-finding.png" width="800" style="margin-right: 200px;">Lane-finding</a>
+<b>Sample output of sliding window search </b>
+
+<img src="output_images/Lane-finding.png" width="800" style="margin-right: 200px;">
 
 Once the lanes line region is drawn on the perspective image, the inverse transformation matrix which was obtained when we went from the original image's region of interest to the bird's eye view. This gives the final lane finding image.
 
@@ -107,5 +109,5 @@ where
 
 #### <b> Problems with the algorithm </b>
 
-The algorithm seems to do a decent job with the project video but fails on the challenge video but if there is a case twhere the right lanes appear very close the
+The algorithm seems to do a decent job with the project video but fails on the challenge video but if there is a case where the right lanes appear very close the
 left lane , the algorithm fails.
