@@ -118,7 +118,7 @@ Once the lanes line region is drawn on the perspective image, the inverse transf
 
 The final image overlay and visualization code is also contained in the method def radius_curv(originalimage, binary_warped, inverseM, idx):
 
- <a href=""><img src="output_images/Lane-finding.png" width="800" style="margin-right: 200px;">Lane-finding</a>
+<img src="output_images/final.png" width="800" style="margin-right: 200px;">
  
 
 #### <b> Finding the radius of curvature </b>
