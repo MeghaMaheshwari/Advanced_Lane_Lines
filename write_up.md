@@ -28,13 +28,13 @@ points are found,a matrix is accumulated which essentially is the camera calibra
 
 Examples of output of the camera calibration image is as follows:
 
-<a><img src="output_images/undistorted/chess_board_undistorted.png" width="150" style="margin-right: 50px;">corners_found1.jpg</a>
+<a><img src="output_images/undistorted/chess_board_undistorted.png" width="500" style="margin-right: 200px;">corners_found1.jpg</a>
 
 #### <b>Overall Algorithm</b>
 
-The overall steps ca be seen from the flowchart below : </br>
+The overall steps can be seen from the flowchart below : </br>
 
-    <img src="output_images/Fig.png" width="150" style="margin-right: 50px;"> 
+    <img src="output_images/Fig.png" width="500" style="margin-right: 200px;"> 
 
  
 #### <b> Undistortion </b>
@@ -43,8 +43,8 @@ The undistortion is performed by multiplying the transformation matrix we obtain
 
 Sample mages can be seen below:
 
-<a><img src="test_images/test1.jpg" width="150" style="margin-right: 50px;">Original Distorted Image</a>
-<a><img src="output_images/undistorted/undistorted_test0.jpg" width="150" style="margin-right: 50px;">Undistorted Image</a>
+<a><img src="test_images/test1.jpg" width="200" style="margin-right: 50px;"><p>Original Distorted Image</p></a>
+<a><img src="output_images/undistorted/undistorted_test0.jpg" width="200" style="margin-right: 50px;"><p>Undistorted Image</p></a>
 
 
 ##### <b>Binary Thresholding</b> 
@@ -83,7 +83,7 @@ Once this entire process completes, the algorithm figures out the major chunk of
 
 After computing the lanes, we draw them back on the original undistorted image.
 
-<a href=""><img src="output_images/Lane-finding.png" width="150" style="margin-right: 50px;">Lane-finding</a>
+<a href=""><img src="output_images/Lane-finding.png" width="500" style="margin-right: 200px;">Lane-finding</a>
 
 Once the lanes line region is drawn on the perspective image, the inverse transformation matrix which was obtained when we went from the original image's region of interest to the bird's eye view. This gives the final lane finding image.
 
