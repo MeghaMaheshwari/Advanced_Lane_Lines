@@ -28,13 +28,13 @@ points are found,a matrix is accumulated which essentially is the camera calibra
 
 Examples of output of the camera calibration image is as follows:
 
-<a><img src="output_images/undistorted/chess_board_undistorted.png" width="500" style="margin-right: 200px;">corners_found1.jpg</a>
+<a><img src="output_images/undistorted/chess_board_undistorted.png" width="800" style="margin-right: 200px;">
 
 #### <b>Overall Algorithm</b>
 
 The overall steps can be seen from the flowchart below : </br>
 
-    <img src="output_images/Fig.png" width="500" style="margin-right: 200px;"> 
+    <img src="output_images/Fig.png" width="800" style="margin-right: 200px;"> 
 
  
 #### <b> Undistortion </b>
@@ -52,10 +52,6 @@ Sample mages can be seen below:
  The Bianry thresholding is done in two steps. 
  
 * First, we do a Sobel thresholding on the image using gradient magnitude thresholding.
-
-<a><img src="test_images/test1.jpg" width="150" style="margin-right: 50px;">Original Distorted Image</a>
-<a><img src="output_images/undistorted/undistorted_test0.jpg" width="150" style="margin-right: 50px;">Undistorted Image</a>
-
 * We also do a color thresholding on the HLS image.
   Sample :
   
