@@ -34,6 +34,7 @@ Examples of output of the camera calibration image is as follows:
 
 The overall steps can be seen from the flowchart below : </br>
 
+    ![Output Image](output_images/Fig.png)
     <img src="output_images/Fig.png" style="margin-right: 200px;"> 
 
  
