@@ -55,19 +55,19 @@ Sample mages can be seen below:
 * We also do a color thresholding on the HLS image.
   Sample :
   
-   <img src="output_images/color_threshold.png" width="150" style="margin-right: 50px;">
+   <img src="output_images/color_threshold.png" width="600" style="margin-right: 100px;">
     
 * Finally we merge the results of Sobel thresholding and color thresolding to get the binary thresholded image.
   Sample:
   
-   <img src="output_images/binary_threshold.png" width="150" style="margin-right: 50px;">
+   <img src="output_images/binary_threshold.png" width="800" style="margin-right: 200px;">
 
 
 ##### <b> Perspective Transform</b> 
 
 Once we have the binary thresholded image, we identify our region of interest and warp the image to get a birds eye view of the image.
 
-   <img src="output_images/Perspective.png" width="150" style="margin-right: 50px;">  
+   <img src="output_images/Perspective.png" width="800" style="margin-right: 200px;">  
 
 The code for this portion is available in the method def warp(originalimage, thresholdedimg, idx):
 
@@ -79,13 +79,13 @@ Once this entire process completes, the algorithm figures out the major chunk of
 
 After computing the lanes, we draw them back on the original undistorted image.
 
-<a href=""><img src="output_images/Lane-finding.png" width="500" style="margin-right: 200px;">Lane-finding</a>
+<a href=""><img src="output_images/Lane-finding.png" width="800" style="margin-right: 200px;">Lane-finding</a>
 
 Once the lanes line region is drawn on the perspective image, the inverse transformation matrix which was obtained when we went from the original image's region of interest to the bird's eye view. This gives the final lane finding image.
 
 The final image overlay and visualization code is also contained in the method def radius_curv(originalimage, binary_warped, inverseM, idx):
 
- <a href=""><img src="output_images/Lane-finding.png" width="150" style="margin-right: 50px;">Lane-finding</a>
+ <a href=""><img src="output_images/Lane-finding.png" width="800" style="margin-right: 200px;">Lane-finding</a>
  
 
 #### <b> Finding the radius of curvature </b>
