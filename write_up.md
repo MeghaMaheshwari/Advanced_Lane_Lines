@@ -150,3 +150,6 @@ Problems faced:
 	* I experimented with storing the values of the left and right points for previous frames and than using this for calculation of my lane detection.
 	  but the results that I got obtained before taking the average was better than that obtained by gathering data from previous frames and hence I chose
 	  to not store data from previous frames to avoid unnecessary computation.
+	  
+Steps to make it more robust:
+	* Try it out on a self recorded video of the lane and see how it performs on each frame by taking images per frame.
