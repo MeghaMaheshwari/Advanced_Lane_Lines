@@ -142,3 +142,11 @@ where
 
 The algorithm seems to do a decent job with the project video but fails on the challenge video but if there is a case where the right lanes appear very close the
 left lane , the algorithm fails.
+Problems faced:
+	* Lot of problems where faced initially in getting the birds eye view of the lane images as I had initally set the co-ordinates in an incorrect order
+	 which I did not figure out earlier.
+	* While masking the images based on color and Sobel Thresholding I was still getting the area aroud the trees heavily detected which caused me to play
+	  around with the parameters for thresholding to get the best fit.
+	* I experimented with storing the values of the left and right points for previous frames and than using this for calculation of my lane detection.
+	  but the results that I got obtained before taking the average was better than that obtained by gathering data from previous frames and hence I chose
+	  to not store data from previous frames to avoid unnecessary computation.
